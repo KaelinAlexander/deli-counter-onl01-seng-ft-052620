@@ -4,7 +4,7 @@ def line(katz_deli)
 current_line=[]
 if katz_deli.count>0
   katz_deli.each do |customer|
-  "#{kate_deli("
+  current_line << "#{kate_deli.index(customer)+1}. #{customer}"
   end
   puts "The line is currently: #{current_line}."
 else
