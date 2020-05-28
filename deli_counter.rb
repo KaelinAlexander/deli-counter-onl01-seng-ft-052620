@@ -9,10 +9,10 @@ if katz_deli.count>0
     current_line << line_number_string
     current_line << line_name
   end
+  puts "The line is currently: #{current_line}."
 else
   puts "The line is currently empty."
 end
-    puts "The line is currently: #{current_line}."
 end
 
 def take_a_number(katz_deli,name)
