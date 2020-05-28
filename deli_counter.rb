@@ -1,6 +1,7 @@
 require "pry"
 
 def line(katz_deli)
+current_line=[]
 if katz_deli.any?
   katz_deli.each do |customer|
     line_number=katz_deli.index(customer)+1
