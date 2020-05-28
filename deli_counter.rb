@@ -6,7 +6,7 @@ if katz_deli.count>0
   katz_deli.each do |customer|
   current_line << "#{katz_deli.index(customer)+1}. #{customer}"
   end
-  puts "The line is currently: #{current_line.join(" ")}."
+  puts "The line is currently: #{current_line.join(" ")}"
 else
   puts "The line is currently empty."
 end
