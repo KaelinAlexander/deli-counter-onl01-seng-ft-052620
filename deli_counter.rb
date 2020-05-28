@@ -1,3 +1,5 @@
+require "pry"
+
 def line(katz_deli)
 current_line=[]
 if katz_deli.length==0
