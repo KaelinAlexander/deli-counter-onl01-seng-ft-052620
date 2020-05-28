@@ -1,10 +1,7 @@
 require "pry"
 
 def line(katz_deli)
-current_line=[]
-if katz_deli.empty?
-  puts "The line is currently empty."
-else
+if katz_deli.any?
   katz_deli.each do |customer|
     line_number=katz_deli.index(customer)+1
     line_number_string=line_number.join(". ")
@@ -12,6 +9,8 @@ else
     current_line << line_number_string
     current_line << line_name
   end
+else
+  puts "The line is currently empty."
 end
     puts "The line is currently: #{current_line}."
 end
