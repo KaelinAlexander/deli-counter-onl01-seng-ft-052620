@@ -5,7 +5,7 @@ current_line=[]
 if katz_deli.count>0
   katz_deli.each do |customer|
     line_number=katz_deli.index(customer)+1
-    line_number_string=line_number.join(". ")
+    line_number_string=line_number.to_s 
     current_line << line_number_string
     current_line << line_name
   end
